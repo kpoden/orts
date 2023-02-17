@@ -1,0 +1,48 @@
+:root {
+  --bg-primary: #B667F1;
+  --c-font-regular: #3b3b3b;
+  --c-font-white: #f5f5f5;
+  --c-font-secondary: #8d8d8d;
+  --c-button-border: #3b3b3b;
+  --c-section-border: #000000;
+  --c-link: #000000;
+  --c-form-invalid: #f00;
+  --c-valid: #62c584;
+  --border-section: 1px solid #000;
+  --ff-regular: "Montserrat", "Arial", sans-serif;
+  --fz-regular: 18px;
+  --gutter-wrapper: 100px;
+  --pop-fade-in-up: all 0.5s ease-out;
+  --border-radius-btn: 12px;
+
+  --z-modal: 1000;
+  --z-burger: 999;
+  --z-header: 998;
+}
+
+@media (max-width: 1369px) {
+  :root {
+    --gutter-wrapper: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  :root {
+    --gutter-wrapper: 50px;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --gutter-wrapper: 80px;
+  }
+}
+
+@media (max-width: 575px) {
+  :root {
+    --gutter-wrapper: 60px;
+  }
+}
+@media (max-width: 422px) {
+  :root {
+    --gutter-wrapper: 20px;
+  }
+}

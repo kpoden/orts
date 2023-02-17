@@ -34,6 +34,12 @@
   <link rel="stylesheet" href="./libs/animate.min.css" />
   <link rel="stylesheet" href="./styles/app.css" />
 
+  <!-- подключаем jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <!-- ... -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
   <!--/assets block-->
 
 </head>
@@ -43,8 +49,9 @@
     <header class="orts-header-container">
       <div class="orts-header">
         <div class="orts-header--inner">
-          <a href="/" class="orts-typography-3 orts-header--logo"><svg>
-              <use data-v-3d510c30="" xlink:href="images/sprite.svg#logo"></use>
+          <a href="/" class="orts-typography-3 orts-header--logo">
+            <svg>
+              <use xlink:href="images/sprite.svg#logo"></use>
             </svg>
           </a>
           <nav class="orts-header-menu">
@@ -73,6 +80,46 @@
     </header>
     <main>
       <section class="main">
+        <div class="orts-slider">
+          <div class="orts-slider-slide">
+            <div  class="orts-slider-slide--info">
+              <div  class="orts-slider-slide--title">Лечение зубов под микроскопом</div>
+              <div  class="orts-slider-slide--subtitle">по цене обычного лечения</div>
+
+              <div class="orts-slider-text-block">
+                <svg>
+                  <use xlink:href="images/sprite.svg#tooth-icon"></use>
+                </svg>
+                <p class="orts-slider-text-block--text">
+                  Лучшее на сегодняшний день лечение:
+                  передовые технологии, оригинальные материалы 
+                  ведущих европейских производителей и высококвалифицированные специалисты.
+                </p>
+              </div>
+
+              <div class="orts-slider-doc-block">
+                <svg>
+                  <use xlink:href="images/sprite.svg#decor-white"></use>
+                </svg>
+                <p class="orts-slider-doc-block--text">
+                    <p class="orts-slider-doc-block--name"></p>
+                    <p class="orts-slider-doc-block--subtext"></p>
+                </p>
+              </div>
+
+              <button class="orts-slider-button">Записаться на консультацию</button>
+
+
+            </div>
+            <picture  class="orts-slider-slide--img">
+              <source  media="(min-width: 768px)"
+                srcset="https://orts.me/app/uploads/2023/02/orts_web_banner_microscope_desktop-1_result.webp"> <img
+                 src="https://orts.me/app/uploads/2023/02/orts_web_banner_microscope_mobile_result.webp" alt="">
+            </picture>
+          </div>
+
+          
+        </div>
       </section>
 
 

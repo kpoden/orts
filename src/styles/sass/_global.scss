@@ -19,6 +19,8 @@ h6 {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  color: var(--c-font-regular);
+  overflow: hidden;
 }
 
 li, ul {
@@ -27,4 +29,6 @@ li, ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
+

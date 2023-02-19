@@ -6,6 +6,9 @@
   margin: 0;
 }
 
+body {
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 h1,
 h2,
@@ -20,7 +23,13 @@ h6 {
   max-width: 1200px;
   margin: 0 auto;
   color: var(--c-font-regular);
-  overflow: hidden;
+  min-width: 320px;
+}
+
+@media (max-width: 1200px){
+  .container {
+    padding: 0 10px;
+  }
 }
 
 li, ul {
@@ -31,4 +40,5 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 

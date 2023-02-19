@@ -10,12 +10,14 @@
             justify-content: space-between
 
         &--logo
-            width: 90px
-            height: 38px
-
+            
         &-menu
             font-family: 'Inter', sans-serif
-            width: 350px
+            padding-left: 20px
+
+            +mw(768)
+                display: none
+
             
             &--list
                 display: flex
@@ -27,9 +29,22 @@
                 line-height: 24px
                 margin-right: 40px
 
+                +mw(967)
+                    font-size: 14px
+                    margin-right: 20px
+
+                
+
+
         &--phone-num
             font-family: 'Prosto One'
             font-style: normal
             font-weight: 400
             font-size: 24px
             line-height: 44px
+            
+            +mw(967)
+                font-size: 18px
+
+            +mw(768)
+                display: none

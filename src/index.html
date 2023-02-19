@@ -37,8 +37,8 @@
   <!-- подключаем jQuery -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <!-- ... -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
 
   <!--/assets block-->
 
@@ -50,7 +50,7 @@
       <div class="orts-header">
         <div class="orts-header--inner">
           <a href="/" class="orts-typography-3 orts-header--logo">
-            <svg>
+            <svg width="90px" height="38px">
               <use xlink:href="images/sprite.svg#logo"></use>
             </svg>
           </a>
@@ -80,45 +80,137 @@
     </header>
     <main>
       <section class="main">
-        <div class="orts-slider">
-          <div class="orts-slider-slide">
-            <div  class="orts-slider-slide--info">
-              <div  class="orts-slider-slide--title">Лечение зубов под микроскопом</div>
-              <div  class="orts-slider-slide--subtitle">по цене обычного лечения</div>
+       
+        <!-- Slider -->
+        <div class="orts-slider swiper">
+          <div class="swiper-wrapper">
 
-              <div class="orts-slider-text-block">
-                <svg>
-                  <use xlink:href="images/sprite.svg#tooth-icon"></use>
-                </svg>
-                <p class="orts-slider-text-block--text">
-                  Лучшее на сегодняшний день лечение:
-                  передовые технологии, оригинальные материалы 
-                  ведущих европейских производителей и высококвалифицированные специалисты.
-                </p>
+            <!-- Slide №1 -->
+            <div class="swiper-slide orts-slider-slide">
+              <div  class="orts-slider-slide--info">
+                <div class="orts-slider-slide-top-info">
+                  <div  class="orts-slider-slide--title">Orts - стоматология с особым вниманием</div>
+                  <div  class="orts-slider-slide--subtitle">Вы почувствуете это с первых минут знакомства, 
+                    с первой обоюдной улыбки</div>
+                </div>
+
+                <div class="orts-slider-slide-text-block">
+                  <svg width="65" height="49" class="orts-slider-slide-text-block--icon">
+                    <use xlink:href="images/sprite.svg#tooth-icon"></use>
+                  </svg>
+                  <p class="orts-slider-slide-text-block--text">
+                    Лучшее на сегодняшний день лечение:
+                    передовые технологии, оригинальные материалы 
+                    ведущих европейских производителей и высококвалифицированные специалисты.
+                  </p>
+                </div>
+
+                <div class="orts-slider-slide-doc-block">
+                  <svg width="102" height="73"  class="orts-slider-slide-doc-block-icon">
+                    <use xlink:href="images/sprite.svg#decor-white"></use>
+                  </svg>
+                  <div class="orts-slider-slide-doc-block-text">
+                      <p class="orts-slider-slide-doc-block--name"> Александр Михайлович Борцов</p>
+                      <p class="orts-slider-slide-doc-block--subtext">главный врач клиники Orts</p>
+                  </div>
+                </div>
+                <div class="btn-wrap">
+                  <button class="orts-slider-slide-button btn">Записаться на консультацию</button>
+                </div>
               </div>
-
-              <div class="orts-slider-doc-block">
-                <svg>
-                  <use xlink:href="images/sprite.svg#decor-white"></use>
-                </svg>
-                <p class="orts-slider-doc-block--text">
-                    <p class="orts-slider-doc-block--name"></p>
-                    <p class="orts-slider-doc-block--subtext"></p>
-                </p>
-              </div>
-
-              <button class="orts-slider-button">Записаться на консультацию</button>
-
-
+              <picture  class="orts-slider-slide-img">
+                <source  media="(max-width: 768px)" srcset="images/main-slider/mob/1.jpg"> 
+                  <img src="images/main-slider/1.jpg" alt="">
+              </picture>
             </div>
-            <picture  class="orts-slider-slide--img">
-              <source  media="(min-width: 768px)"
-                srcset="https://orts.me/app/uploads/2023/02/orts_web_banner_microscope_desktop-1_result.webp"> <img
-                 src="https://orts.me/app/uploads/2023/02/orts_web_banner_microscope_mobile_result.webp" alt="">
-            </picture>
-          </div>
 
-          
+
+            <!-- Slide №2 -->
+            <div class="swiper-slide orts-slider-slide">
+              <div  class="orts-slider-slide--info">
+                <div class="orts-slider-slide-top-info">
+                  <div  class="orts-slider-slide--title">Orts - стоматология с особым вниманием</div>
+                  <div  class="orts-slider-slide--subtitle">Вы почувствуете это с первых минут знакомства, 
+                    с первой обоюдной улыбки</div>
+                </div>
+
+                <div class="orts-slider-slide-text-block">
+                  <svg width="65" height="49" class="orts-slider-slide-text-block--icon">
+                    <use xlink:href="images/sprite.svg#tooth-icon"></use>
+                  </svg>
+                  <p class="orts-slider-slide-text-block--text">
+                    Лучшее на сегодняшний день лечение:
+                    передовые технологии, оригинальные материалы 
+                    ведущих европейских производителей и высококвалифицированные специалисты.
+                  </p>
+                </div>
+
+                <div class="orts-slider-slide-doc-block">
+                  <svg width="102" height="73"  class="orts-slider-slide-doc-block-icon">
+                    <use xlink:href="images/sprite.svg#decor-white"></use>
+                  </svg>
+                  <div class="orts-slider-slide-doc-block-text">
+                      <p class="orts-slider-slide-doc-block--name"> Александр Михайлович Борцов</p>
+                      <p class="orts-slider-slide-doc-block--subtext">главный врач клиники Orts</p>
+                  </div>
+                </div>
+
+                <div class="btn-wrap">
+                  <button class="orts-slider-slide-button btn">Записаться на консультацию</button>
+                </div>
+
+              </div>
+              <picture  class="orts-slider-slide-img">
+                <source  media="(max-width: 768px)" srcset="images/main-slider/mob/2.jpg"> 
+                  <img src="images/main-slider/2.jpg" alt="">
+              </picture>
+            </div>
+
+
+            <!-- Slide №3 -->
+            <div class="swiper-slide orts-slider-slide">
+              <div  class="orts-slider-slide--info">
+                <div class="orts-slider-slide-top-info">
+                  <div  class="orts-slider-slide--title">Orts - стоматология с особым вниманием</div>
+                  <div  class="orts-slider-slide--subtitle">Вы почувствуете это с первых минут знакомства, 
+                    с первой обоюдной улыбки</div>
+                </div>
+
+                <div class="orts-slider-slide-text-block">
+                  <svg width="65" height="49" class="orts-slider-slide-text-block--icon">
+                    <use xlink:href="images/sprite.svg#tooth-icon"></use>
+                  </svg>
+                  <p class="orts-slider-slide-text-block--text">
+                    Лучшее на сегодняшний день лечение:
+                    передовые технологии, оригинальные материалы 
+                    ведущих европейских производителей и высококвалифицированные специалисты.
+                  </p>
+                </div>
+
+                <div class="orts-slider-slide-doc-block">
+                  <svg width="102" height="73"  class="orts-slider-slide-doc-block-icon">
+                    <use xlink:href="images/sprite.svg#decor-white"></use>
+                  </svg>
+                  <div class="orts-slider-slide-doc-block-text">
+                      <p class="orts-slider-slide-doc-block--name"> Александр Михайлович Борцов</p>
+                      <p class="orts-slider-slide-doc-block--subtext">главный врач клиники Orts</p>
+                  </div>
+                </div>
+
+                <div class="btn-wrap">
+                  <button class="orts-slider-slide-button btn">Записаться на консультацию</button>
+                </div>
+
+              </div>
+              <picture  class="orts-slider-slide-img">
+                <source  media="(max-width: 768px)" srcset="images/main-slider/mob/3.jpg"> 
+                  <img src="images/main-slider/3.jpg" alt="">
+              </picture>
+            </div>
+
+            
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
@@ -129,7 +221,7 @@
 
 
 
-
+      <br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -154,7 +246,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
   <script src="libs/swiper-bundle.min.js"></script>
-  <script src="scripts/script.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>

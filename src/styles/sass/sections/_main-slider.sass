@@ -1,7 +1,172 @@
 .main
     .orts-slider
-        background: #000
+        height: 550px
+        width: 100%
 
         &-slide
             border-radius: 40px
-            overflow: hidden 
+            overflow: hidden
+            position: relative
+            width: 100%
+            height: 100%
+
+            &--info
+                width: 100%
+                height: 100%
+                color: #fff
+
+                & > *
+                    position: absolute
+                    z-index: 100
+
+            &-top-info
+                top: 0
+                left: 0
+                max-width: 60%
+                position: relative
+                padding: 64px 0 0 64px
+
+                +mw(1120)
+                    max-width: 70%
+
+                +mw(768)
+                    max-width: 90%
+                    padding: 44px 0 0 16px
+
+            &--title
+                font-family: 'Prosto One'
+                font-weight: 400
+                font-size: 48px
+                line-height: 56px
+                padding-bottom: 13px
+
+                +mw(900)
+                    font-size: 35px
+                
+
+                +mw(768)
+                    font-size: 22px
+                    line-height: 30px
+
+            &--subtitle
+                font-family: 'Inter'
+                font-weight: 600
+                font-size: 20px
+                line-height: 28px
+                max-width: 80%
+
+                +mw(900)
+                    max-width: none
+
+                +mw(768)
+                    font-family: 'Prosto One'
+                    max-width: 90%
+                    font-size: 18px
+                    line-height: 30px
+                    font-weight: 400
+
+                +mw(600)
+                    line-height: 20px
+
+            &-text-block
+                max-width: 50%
+                padding: 85px 0 0 64px
+                display: flex
+                align-items: center
+
+                +mw(1120)
+                    padding-top: 30px
+
+                +mw(768)
+                    padding: 65px 0 0 16px
+                    max-width: 60%
+
+                +mw(600)
+                    padding-top: 35px
+                    max-width: 70%
+                +mw(450)
+                    padding-top: 15px
+
+
+                &--icon
+                    flex-shrink: 0
+                    margin-right: 20px
+            
+                &--text
+                    font-size: 16px
+                    line-height: 19px
+                    
+                    +mw(768)
+                        font-size: 14px
+                        line-height: 15px
+                        
+
+
+            &-doc-block
+                right: 0
+                top: 60%
+                display: flex
+                align-items: center
+                padding-right: 25px
+
+                +mw(768)
+                    bottom: 110px
+                    top: auto
+                    padding-left: 16px
+
+                &-icon
+                    flex-shrink: 0
+                    +mw(900)
+                        transform: scale(0.8)
+                    +mw(600)
+                        transform: scale(0.7)
+
+                    +mw(450)
+                        transform: scale(0.5)
+
+                &-text
+                    font-size: 18px
+                    line-height: 22px
+
+                    +mw(450)
+                        font-size: 14px
+                        line-height: 15px
+
+                &--name
+                    font-weight: 600
+                    
+
+                &--subtext
+
+            .btn-wrap
+                bottom: 0
+                
+                +mw(600)
+                    width: 100%
+
+            .orts-slider-slide-button 
+                text-transform: uppercase
+                font-size: 11px
+                margin: 0 0 40px 64px
+                
+                +mw(600)
+                    position: relative
+                    left: 50%
+                    transform: translate(-50%)
+                    margin: 0 0 35px 0
+                    bottom: 0
+                    top: none
+
+            .orts-slider-slide-img
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 0
+                width: 100%
+                height: 100%
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    object-position: bottom right
+

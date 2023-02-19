@@ -1,4 +1,5 @@
 .main
+    height: 100%
     .orts-slider
         height: 550px
         width: 100%
@@ -170,3 +171,19 @@
                     object-fit: cover
                     object-position: bottom right
 
+    
+.swiper-pagination
+    bottom: -20px !important
+    z-index: 10000
+
+    &-bullet
+        background: var(--c-grey)
+        width: var(--swiper-bullet-size)
+        height: var(--swiper-bullet-size)
+        opacity: 1 !important
+        margin: 0 7px !important
+        transition: .2s
+
+        &-active
+            background: var(--c-gold-primary)
+            transform: scale(1.8)

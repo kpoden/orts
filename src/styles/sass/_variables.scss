@@ -1,8 +1,10 @@
 :root {
   --bg-primary: #1E1E1E;
+  --c-grey: #868A8D;
   --c-font-regular: #3A4047;
   --c-font-white: #f5f5f5;
   --c-font-secondary: #8d8d8d;
+  --c-gold-primary: #A27411;
   --c-button-border: #3b3b3b;
   --c-section-border: #000000;
   --c-link: #000000;
@@ -14,6 +16,10 @@
   --gutter-wrapper: 100px;
   --pop-fade-in-up: all 0.5s ease-out;
   --border-radius-btn: 12px;
+
+
+  --swiper-bullet-size: 10px;
+  --swiper-bullet-active-size: 18px;
 
   --z-modal: 1000;
   --z-burger: 999;

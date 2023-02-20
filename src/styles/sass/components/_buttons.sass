@@ -15,4 +15,12 @@
     transition: .2s
 
     &:hover
-        background: #C3993E
+        background: var(--c-btn-primary)
+
+    &-white
+        @extend .btn
+        background: #fff
+        color: var(--c-font-black)
+
+        &:hover
+            background: var(--c-btn-sec-hover)

@@ -37,6 +37,11 @@
 </symbol>
 
 
+<symbol id="percent" width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.7215 29.0628C18.1083 35.3556 12.9025 40.1735 3.42945 37.4426C7.81959 36.3186 9.57596 34.9181 12.3223 31.3517C16.8451 25.497 20.1976 18.8282 24.5805 12.8371C29.1937 6.54438 34.3995 1.72644 43.8725 4.45736C39.4649 5.58337 37.726 6.98185 34.9777 10.531C30.4423 16.3916 27.1044 23.0718 22.7215 29.0628Z" fill="#A27413"/>
+<circle cx="11" cy="9" r="7" stroke="black" stroke-width="4"/>
+<circle cx="38" cy="30" r="7" stroke="black" stroke-width="4"/>
+</symbol>
 
 
 

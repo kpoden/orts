@@ -1,0 +1,132 @@
+.orts-doctors
+    padding-bottom: 60px
+
+
+.orts-doctors-block
+    display: flex
+    flex-wrap: wrap
+
+.orts-doctors-doctor
+
+.orts-doctor
+    width: calc(100% / 4)
+
+    +mw(950)
+        width: calc(100% / 3)
+    +mw(700)
+        width: calc(100% / 2)
+
+    +mw(470)
+        width: 100%
+
+.orts-doctor--inner
+    width: 240px
+    height: 430px
+    position: relative
+    margin: 0 auto
+
+
+.orts-doctor-images-block
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    width: 240px
+    height: 240px
+    cursor: pointer
+
+    & img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    &:hover .orts-doctor-frame-hover
+        opacity: 1
+        
+    &:hover .orts-doctor-image-hover
+        opacity: 1
+
+.orts-doctor-frame
+    position: absolute
+    z-index: 9000
+
+.orts-doctor-frame-hover
+    position: absolute
+    z-index: 9005
+    opacity: 0
+    transition: opacity .3s
+
+.orts-doctor-image
+    position: absolute
+
+.orts-doctor-image-hover
+    position: absolute
+    opacity: 0
+    transition: .3s
+
+.orts-doctor-icons
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 10000
+
+
+.orts-doctor-exp-icon
+    max-width: 60px
+    max-height: 60px
+    position: relative
+    top: 47px
+    left: 10px
+
+.orts-doctor-exp-text
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+
+.orts-doctor-edu-icon
+    position: relative
+    top: 55px
+    left: -5px
+
+.orts-doctor-info
+    position: absolute
+    bottom: 0
+    text-align: center
+
+.orts-doctor-name
+    font-weight: 500
+    font-size: 16px
+    line-height: 22px
+    max-width: 80%
+    margin: 0 auto
+    padding-bottom: 5px
+
+.orts-doctor-position
+    font-weight: 400
+    font-size: 15px
+    line-height: 24px
+    padding-bottom: 5px
+
+.orts-doctor-detail
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: var(--c-gold-primary)
+
+
+
+.orts-doctor-signup
+    width: 115px
+    height: 40px
+    font-weight: 700
+    font-size: 13px
+    line-height: 24px
+    margin-top: 15px
+    margin-bottom: 15px
+

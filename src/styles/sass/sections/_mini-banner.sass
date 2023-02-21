@@ -1,0 +1,81 @@
+.orts-mini-banner
+    height: 80px
+    width: 100%
+    overflow: hidden
+    border-radius: var(--border-radius-banners)
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 50px
+
+    +mw(900)
+        height: 150px
+
+    +mw(700)
+        flex-direction: column
+
+    &-img
+        position: absolute
+        top: 0
+        left: 0
+        object-fit: cover
+
+    &--offer
+        height: 100%
+        max-width: 70%
+        position: relative
+        top: 0
+        left: 0
+        display: flex
+        align-items: center
+        justify-content: end
+        padding-right: 40px
+    
+        +mw(700)
+            max-width: none
+            width: 90%
+            left: 50%
+            transform: translateX(-60%)
+            padding-right: 0
+        
+
+
+    &-icon
+        flex-shrink: 0
+        margin-left: 20px
+
+        +mw(700)
+            transform: scale(0.8)
+
+    &-text
+        font-family: 'Prosto One'
+        font-weight: 400
+        font-size: 32px
+        line-height: 44px
+        padding-left: 30px
+        padding-right: 20px
+
+        +mw(700)
+            font-weight: 400
+            font-size: 28px
+            line-height: 29px
+
+        +mw(600)
+            font-size: 20px
+            line-height: 20px
+
+        
+    &-button
+        z-index: 100
+        margin-right: 20px
+        max-width: 200px
+        font-size: 16px
+        line-height: 24px
+        +mw(700)
+            margin-bottom: 20px
+            font-size: 13px
+            max-width: 115px
+            min-height: 40px
+
+

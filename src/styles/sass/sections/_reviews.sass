@@ -1,0 +1,118 @@
+.orts-reviews
+
+.orts-reviews-sites
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-bottom: 100px
+
+.orts-reviews-sites-item
+    width: calc(100% / 5)
+
+.orts-reviews-img
+    margin: 0 auto
+    margin-bottom: 15px
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+
+.orts-reviews-rating
+    font-family: 'Prosto One'
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 33px
+    display: block
+    text-align: center
+
+    +adaptive-font(24, 12)
+
+
+.orts-reviews-clients
+
+.orts-reviews-client
+    max-width: 730px
+    min-height: 228px
+    margin: 0 auto
+    padding: 23px 54px 37px
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.05)
+    border-radius: 30px
+    margin-bottom: 20px
+
+    +mw(400)
+        padding: 23px 25px 25px
+
+    &--inner
+
+    &-top-info
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 25px
+
+    &-img
+        
+
+    &-img--wrap
+        width: 50px
+        height: 50px
+        margin-right: 15px
+
+    &-info
+        display: flex
+        align-items: center
+
+
+    &-name
+        display: block
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+
+        +adaptive-font(18, 14)
+
+    &-date
+        font-weight: 500
+        font-size: 18px
+        line-height: 22px
+        color: rgba(58, 64, 72, 0.5)
+
+        +adaptive-font(18, 14)
+
+    &-review
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+
+        img
+            max-width: 100%
+
+    &-rating
+        display: flex
+        align-items: center
+        justify-content: center
+
+        +mw(600)
+            flex-direction: column-reverse
+
+        +mw(400)
+            transform: scale(.8)
+
+    &-stars
+        padding-right: 25px
+        +mw(600)
+            padding-right: 0
+            padding-top: 10px
+        
+
+
+    &-site-icon--wrap
+        width: 50px
+        height: 50px
+
+
+

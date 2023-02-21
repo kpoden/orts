@@ -1,0 +1,86 @@
+.orts-ask
+    width: 100%
+    background: var(--c-gold-sec)
+    +mw(750)
+        margin-top: 170px
+    
+
+.orts-ask--inner
+    position: relative
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 900px
+
+    +mw(750)
+        flex-direction: column
+    
+.orts-ask-left
+    display: flex
+    align-items: center
+    max-width: 70%
+    +mw(750)
+        text-align: center
+        padding-top: 15px
+    
+    
+.orts-ask-img
+    position: absolute
+    bottom: -5px
+    min-width: 170px
+    z-index: 1
+    overflow: hidden
+    img
+        min-height: 200px
+        position: relative
+
+    +mw(750)
+        bottom: calc(100% - 5px)
+        left: 50%
+        transform: translateX(-50%)
+
+.orts-ask-text-block
+    color: #fff
+    padding-left: 200px
+
+    +mw(750)
+        padding-left: 0
+
+
+.orts-ask-askquestion
+    font-family: 'Prosto One'
+    font-weight: 600
+    font-size: 27px
+    line-height: 33px
+
+
+.orts-ask-subtext
+    font-weight: 500
+    font-size: 15px
+    line-height: 19px
+
+.orts-ask-consulant
+    font-weight: 300
+    font-size: 13px
+    line-height: 16px
+    padding-top: 15px
+
+.orts-ask-buttons
+    padding: 14px 0
+
+.orts-ask-button
+    display: block
+    width: 200px
+    height: 54px
+    background: #fff
+    color: var(--c-font-black)
+
+    &:first-child
+        margin-bottom: 8px
+
+    &:hover
+        background: var(--c-btn-sec-hover)
+
+
+

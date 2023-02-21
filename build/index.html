@@ -45,8 +45,8 @@
 </head>
 
 <body>
-  <div class="container orts-page">
-    <header class="orts-header-container">
+  <div class="orts-page">
+    <header class="orts-header-container container">
       <div class="orts-header">
         <div class="orts-header--inner">
           <a href="/" class="orts-typography-3 orts-header--logo">
@@ -57,7 +57,7 @@
           <nav class="orts-header-menu">
             <ul class="orts-header-menu--list">
               <li class="orts-header-menu--item"><a href="https://orts.me/"
-                  class="orts-header-menu--link orts-header-menu--link--active">Главная</a>
+                  class="orts-header-menu--link active-link">Главная</a>
               </li>
               <li class="orts-header-menu--item"><a href="https://orts.me/service/"
                   class="orts-header-menu--link">Услуги</a>
@@ -80,7 +80,7 @@
     </header>
     <main>
       <!-- Slider block -->
-      <section class="main-slider">
+      <section class="main-slider container">
        
         <!-- Slider -->
         <div class="orts-slider swiper">
@@ -218,7 +218,7 @@
 
       <!-- Prices block -->
 
-      <section class="orts-prices">
+      <section class="orts-prices container">
         <h2 class="orts-prices-title">Для нас важно видеть здоровые и красивые улыбки наших пациентов</h2>
       
         <div class="orts-prices-block">
@@ -331,7 +331,7 @@
       </section>
 
       <!-- Banner block -->
-      <section class="orts-banner swiper">
+      <section class="orts-banner swiper container">
         <div class="swiper-wrapper">
 
           <div class="orts-banner-item swiper-slide">
@@ -388,7 +388,7 @@
       </section>
 
       <!-- Mini Banner Block -->
-      <section class="orts-mini-banner">
+      <section class="orts-mini-banner container">
         <div class="orts-mini-banner-img">
           <img src="images/mini-banner/1.jpg" alt="Фон">
         </div>
@@ -403,7 +403,7 @@
 
 
       <!-- Doctors Block -->
-      <section class="orts-doctors">
+      <section class="orts-doctors container">
         <h2 class="orts-doctors-header section-header">Врачи</h2>
 
         <div class="orts-doctors-block">
@@ -519,7 +519,7 @@
       </section>
 
       <!-- Reviews block -->
-      <section class="orts-reviews">
+      <section class="orts-reviews container">
         <h2 class="orts-reviews-header section-header">Отзывы о работе клиники и врачах</h2>
 
         <!-- Site reveiws block -->
@@ -564,85 +564,111 @@
 
 
         <!-- Clients reviews block -->
+        
+        <div class="orts-reviews-clients swiper">
+          <div class="swiper-wrapper-desktop">
 
-        <div class="orts-reviews-clients">
-
-          <div class="orts-reviews-client">
-            <div class="orts-reviews-client--inner">
-              <div class="orts-reviews-client-top-info">
-                <div class="orts-reviews-client-info">
-                  <div class="orts-reviews-client-img--wrap">
-                    <img class="orts-reviews-client-img" src="images/reviews/clients/client-1.png" alt="">
+            <div class="orts-reviews-client swiper-slide">
+              <div class="orts-reviews-client--inner">
+                <div class="orts-reviews-client-top-info">
+                  <div class="orts-reviews-client-info">
+                    <div class="orts-reviews-client-img--wrap">
+                      <img class="orts-reviews-client-img" src="images/reviews/clients/client-1.png" alt="">
+                    </div>
+                    <div class="orts-reviews-client-meta">
+                      <span class="orts-reviews-client-name">Александр Михайлович</span>
+                      <span class="orts-reviews-client-date">10 января 2023г</span>
+                    </div>
                   </div>
-                  <div class="orts-reviews-client-meta">
-                    <span class="orts-reviews-client-name">Александр Михайлович</span>
-                    <span class="orts-reviews-client-date">10 января 2023г</span>
-                  </div>
-                </div>
-                <div class="orts-reviews-client-rating">
-                  <img class="orts-reviews-client-stars" src="images/reviews/stars.png" alt="">
-                  <img class="orts-reviews-client-site-icon" src="images/reviews/clients/site-1.png" alt="">
-                </div>
-              </div>
-              <p class="orts-reviews-client-review">
-                Замечательная стоматология, шикарный, чуткий персонал, врач Бреднева Ю.Е. сверх всяких похвал, к ребенку сразу находит подход, во время лечения с любовью общается с ребенком. только самых добрых пожеланий этой замечательной стоматологии
-              </p>
-            </div>
-          </div>
-
-          <div class="orts-reviews-client">
-            <div class="orts-reviews-client--inner">
-              <div class="orts-reviews-client-top-info">
-                <div class="orts-reviews-client-info">
-                  <div class="orts-reviews-client-img--wrap">
-                  </div>
-                  <div class="orts-reviews-client-meta">
-                    <span class="orts-reviews-client-name">Александр Михайлович</span>
-                    <span class="orts-reviews-client-date">10 января 2023г</span>
+                  <div class="orts-reviews-client-rating">
+                    <img class="orts-reviews-client-stars" src="images/reviews/stars.png" alt="">
+                    <img class="orts-reviews-client-site-icon" src="images/reviews/clients/site-1.png" alt="">
                   </div>
                 </div>
-                <div class="orts-reviews-client-rating">
-                  <img class="orts-reviews-client-stars" src="images/reviews/stars.png" alt="">
-                  <div class="orts-reviews-client-site-icon--wrap">
-                  </div> 
-                </div>
-              </div>
-              <div class="orts-reviews-client-review">
-                <img src="images/reviews/handwrite.png" alt="">
+                <p class="orts-reviews-client-review">
+                  Замечательная стоматология, шикарный, чуткий персонал, врач Бреднева Ю.Е. сверх всяких похвал, к ребенку сразу
+                  находит подход, во время лечения с любовью общается с ребенком. только самых добрых пожеланий этой
+                  замечательной стоматологии
+                </p>
               </div>
             </div>
-          </div>
-
-          <div class="orts-reviews-client hidden-review">
-            <div class="orts-reviews-client--inner">
-              <div class="orts-reviews-client-top-info">
-                <div class="orts-reviews-client-info">
-                  <div class="orts-reviews-client-img--wrap">
-                    <img class="orts-reviews-client-img" src="images/reviews/clients/client-1.png" alt="">
+        
+            <div class="orts-reviews-client swiper-slide">
+              <div class="orts-reviews-client--inner">
+                <div class="orts-reviews-client-top-info">
+                  <div class="orts-reviews-client-info">
+                    <div class="orts-reviews-client-img--wrap">
+                    </div>
+                    <div class="orts-reviews-client-meta">
+                      <span class="orts-reviews-client-name">Александр Михайлович</span>
+                      <span class="orts-reviews-client-date">10 января 2023г</span>
+                    </div>
                   </div>
-                  <div class="orts-reviews-client-meta">
-                    <span class="orts-reviews-client-name">Александр Михайлович</span>
-                    <span class="orts-reviews-client-date">10 января 2023г</span>
+                  <div class="orts-reviews-client-rating">
+                    <img class="orts-reviews-client-stars" src="images/reviews/stars.png" alt="">
+                    <div class="orts-reviews-client-site-icon--wrap">
+                    </div>
                   </div>
                 </div>
-                <div class="orts-reviews-client-rating">
-                  <img class="orts-reviews-client-stars" src="images/reviews/stars.png" alt="">
-                  <img class="orts-reviews-client-site-icon" src="images/reviews/clients/site-1.png" alt="">
+                <div class="orts-reviews-client-review">
+                  <img src="images/reviews/handwrite.png" alt="">
                 </div>
               </div>
-              <p class="orts-reviews-client-review">
-                Замечательная стоматология, шикарный, чуткий персонал, врач Бреднева Ю.Е. сверх всяких похвал, к ребенку сразу находит подход, во время лечения с любовью общается с ребенком. только самых добрых пожеланий этой замечательной стоматологии
-              </p>
+            </div>
+        
+            <div class="orts-reviews-client swiper-slide">
+              <div class="orts-reviews-client--inner">
+                <div class="orts-reviews-client-top-info">
+                  <div class="orts-reviews-client-info">
+                    <div class="orts-reviews-client-img--wrap">
+                      <img class="orts-reviews-client-img" src="images/reviews/clients/client-1.png" alt="">
+                    </div>
+                    <div class="orts-reviews-client-meta">
+                      <span class="orts-reviews-client-name">Александр Михайлович</span>
+                      <span class="orts-reviews-client-date">10 января 2023г</span>
+                    </div>
+                  </div>
+                  <div class="orts-reviews-client-rating">
+                    <img class="orts-reviews-client-stars" src="images/reviews/stars.png" alt="">
+                    <img class="orts-reviews-client-site-icon" src="images/reviews/clients/site-1.png" alt="">
+                  </div>
+                </div>
+                <p class="orts-reviews-client-review">
+                  Замечательная стоматология, шикарный, чуткий персонал, врач Бреднева Ю.Е. сверх всяких похвал, к ребенку сразу
+                  находит подход, во время лечения с любовью общается с ребенком. только самых добрых пожеланий этой
+                  замечательной стоматологии
+                </p>
+              </div>
             </div>
           </div>
-
-
-
+        
+          <div class="reviews-spoiler hidden">Показать всё</div>
+          <div class="reviews-pagination swiper-pagination"></div>
+        
         </div>
+        
+        </section>
 
+        <!-- Ask a question block -->
+        <section class="orts-ask ">
+          <div class="orts-ask--inner container">
+            <div class="orts-ask-left">
+              <div class="orts-ask-img">
+                <img src="images/ask/ask.png" alt="Консультация">
+              </div>
+              <div class="orts-ask-text-block">
+                <p class="orts-ask-askquestion">Задайте вопрос</p>
+                <p class="orts-ask-subtext">Валерия даст грамотную консультацию, поможет записаться на прием</p>
+                <p class="orts-ask-consulant">Валерия Сотникова, ваш координатор лечения</p>
+              </div>
+            </div>
+            <div class="orts-ask-buttons">
+              <button class="orts-ask-button btn">Позвонить</button>
+              <button class="orts-ask-button btn">Заказать звонок</button>
+            </div>
+          </div>
 
-
-      </section>
+        </section>
 
 
 

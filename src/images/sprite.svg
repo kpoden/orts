@@ -43,7 +43,14 @@
 <circle cx="38" cy="30" r="7" stroke="black" stroke-width="4"/>
 </symbol>
 
+<symbol id="arrow-btn" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15" cy="15" r="15" fill="#A27411"/>
+<path d="M14.9998 8.0767L15.9084 9.00699L10.5647 14.3507L21.9229 14.3507L21.9229 15.6488L10.5647 15.6488L15.9084 20.9926L14.9998 21.9229L8.0767 14.9998L14.9998 8.0767Z" fill="white"/>
+</symbol>
 
+<symbol id="decor-gold" width="48" height="34" viewBox="0 0 48 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25.9127 25.7193C31.6811 31.9868 37.9028 36.5722 47.7746 32.3907C42.8983 31.7255 40.8276 30.4235 37.4162 26.8883C31.8004 21.0864 27.344 14.2488 21.8619 8.28065C16.0934 2.01318 9.87172 -2.5722 0 1.60928C4.89531 2.27452 6.94694 3.57648 10.3584 7.09273C15.9885 12.8993 20.4305 19.7512 25.9127 25.7193Z" fill="#84652D"/>
+</symbol>
 
 
 

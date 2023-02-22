@@ -1,26 +1,85 @@
 .services-main
+    display: flex
+
+
 
 .services-content
-    max-width: 75%
+    max-width: 70%
+    padding-right: 20px
+
+    +mw(950)
+        max-width: 100%
+        padding-left: 10px
+        padding-right: 10px
 
     &-desc
+        padding-bottom: 100px
+
+        +mw(950)
+            padding-bottom: 30px
 
     &-desc-title
+        font-family: 'Prosto One'
+        font-weight: 400
+        font-size: 24px
+        line-height: 32px
+        padding-bottom: 12px
 
     &-desc-text
+        font-family: 'Inter'
+        font-weight: 400
+        font-size: 18px
+        line-height: 28px
+
+        
+
 
     &-adv
+        padding-bottom: 50px
+
+    &-adv-img
+        float: right
+        max-width: 45%
+        img
+            width: 100%
+
+        +mw(950)
+            float: none
+            max-width: 80%
+            margin: 0 auto
+            padding-bottom: 20px
+        
 
     &-adv-title
+        font-family: 'Prosto One'
+        font-weight: 400
+        font-size: 24px
+        line-height: 32px
+        color: var(--c-gold-primary)
+        padding-bottom: 12px
 
     &-adv--block
+        max-width: 50%
+
+        +mw(950)
+            max-width: 90%
 
     &-adv-item
         display: flex
+        padding-bottom: 20px
 
     &-adv-decor
+        margin-right: 30px
+        +mw(950)
+            margin-right: 15px
 
     &-adv--inner
+        font-size: 18px
+        line-height: 28px
+
+    &-adv-point
+        font-weight: 600
+       
 
     &-adv-text
 
@@ -29,7 +88,46 @@
         
 
     &-adv-list-item
-        
         list-style: disc
+
+    &-adv-bold-text
+        text-align: center
+        font-family: 'Prosto One'
+        font-weight: 400
+        font-size: 24px
+        line-height: 32px
+        padding: 0 20px
+        padding-bottom: 55px
+
+    &-adv-bg-text
+        font-weight: 400
+        font-size: 18px
+        line-height: 28px
+        padding: 46px 31px
+        color: var(--c-font-light)
+        background: var(--c-bg-gold)
+        margin-bottom: 65px
         
 
+
+
+
+
+
+    .section-header
+        font-weight: 400
+        font-size: 24px
+        line-height: 32px
+
+
+    .orts-doctors-block
+        padding-bottom: 65px
+
+    .orts-doctors-doctor
+        width: calc(100% / 3)
+
+        +mw(950)
+            width: calc(100% / 2)
+
+        +mw(700)
+            width: 100%

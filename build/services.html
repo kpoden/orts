@@ -37,8 +37,8 @@
     <!-- подключаем jQuery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <!-- ... -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--/assets block-->
 
@@ -95,7 +95,7 @@
                     <h1 class="services-top-header section-header">Лечение зубов</h1>
                 </div>
                 <div class="services-top-img--wrap">
-                    <img src="images/services/1.jpg" alt="">
+                    <img src="images/services/header-img.png" alt="">
                 </div>
             </section>
 
@@ -109,20 +109,32 @@
                         </p>
                     </div>
 
+                    <!-- Content form -->
+                    <div class="services-main-form-block content-form" data-aos="fade-in" data-aos-delay="200">
+                        <form class="services-main-form">
+                            <h3 class="services-main-form-title">Поможем рассчитать <br> стоимость лечения</h3>
+                            <input class="services-main-form-input" type="text" id="name" name="name" placeholder="Как вас зовут?" onfocus="if (this.placeholder == 'Как вас зовут?') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Как вас зовут?';}">
+                            
+                            <input class="services-main-form-input" type="tel" id="tel" name="tel" placeholder="Номер телефона" onfocus="if (this.placeholder == 'Номер телефона') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Номер телефона';}"><br><br>
+                            
+                            <input type="submit" class="services-main-form-button btn" value="Хочу узнать стоимость">
+                        </form>
+
+                    </div>
                     <div class="services-content-adv">
                         <h3 class="services-content-adv-title">Преимущества лечения</h3>
-
+                        <div class="services-content-adv-img">
+                            <img src="images/services/article-img.png" alt="">
+                        </div>
                         <div class="services-content-adv--block">
-
                             <div class="services-content-adv-item">
                                 <div class="services-content-adv-decor">
-                                    <svg width="47px" height="34px">
+                                    <svg width="47px" height="36px">
                                         <use xlink:href="images/sprite.svg#decor-gold"></use>
                                     </svg>
                                 </div>
-
                                 <div class="services-content-adv--inner">
-                                    <h4 class="services-content-adv-title">Высокоточная диагностика поражения</h4>
+                                    <h4 class="services-content-adv-point">Высокоточная диагностика поражения</h4>
                                     <p class="services-content-adv-text">
                                         При 30-кратном увеличении, которое дает аппарат, 
                                         врач видит даже незначительные дефекты зубной 
@@ -138,14 +150,13 @@
 
                             <div class="services-content-adv-item">
                                 <div class="services-content-adv-decor">
-                                    <svg width="47px" height="34px">
+                                    <svg width="47px" height="36px">
                                         <use xlink:href="images/sprite.svg#decor-gold"></use>
                                     </svg>
                                 </div>
                                 <div class="services-content-adv--inner">
-                                    <h4 class="services-content-adv-title">Эффективное лечение кариеса</h4>
+                                    <h4 class="services-content-adv-point">Эффективное лечение кариеса</h4>
                                     <p class="services-content-adv-text">
-                                        
                                         При лечении зубов в стоматологии классическим способом 
                                         есть риск вторичного кариеса. 
                                         С микроскопом его нет.                                          
@@ -155,14 +166,13 @@
 
                             <div class="services-content-adv-item">
                                 <div class="services-content-adv-decor">
-                                    <svg width="47px" height="34px">
+                                    <svg width="47px" height="36px">
                                         <use xlink:href="images/sprite.svg#decor-gold"></use>
                                     </svg>
                                 </div>
                                 <div class="services-content-adv--inner">
-                                    <h4 class="services-content-adv-title">Быстрое лечение пульпита</h4>
+                                    <h4 class="services-content-adv-point">Быстрое лечение пульпита</h4>
                                     <p class="services-content-adv-text">
-                                        
                                         Врач видит расположение и строение каналов. 
                                         Поэтому лечит, полностью контролирует процесс, 
                                         а не полагаясь на опыт и интуицию                                    
@@ -172,14 +182,172 @@
                         </div>
                     </div>
 
+                    <p class="services-content-adv-bold-text">
+                        Мы ценим свою репутацию, поэтому в стоматологии Orts на материалах не экономят. Наши специалисты работают только на оригинальных расходниках ведущих производителей
+                    </p>
+
+                    <p class="services-content-adv-bg-text">
+                        Микроскоп обеспечивает высокую точность и качество лечения зубов. Через него стоматолог видит картинку в 30-кратном увеличении. Поэтому может полностью удалить пораженные ткани, не затронув здоровые участки зуба. Благодаря увеличению мы получаем возможность обнаружить дефекты в начальной стадии и нейтрализовать их, что почти невозможно при классическом подходе к лечению. В стоматологии “Orts” мы отказались от лечения зубов без микроскопа, потому что хотим, чтобы зубы наших пациентов служили максимально долго
+                    </p>
 
 
+                    <!-- Doctors Block -->
 
+                    <h2 class="orts-doctors-header section-header" >Наши терапевты</h2>
+                    <div class="orts-doctors-block" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+
+                        <div class="orts-doctors-doctor orts-doctor">
+                          <div class="orts-doctor--inner">
+                            <div class="orts-doctor-images-block">
+                              <img class="orts-doctor-image" src="images/doctors/doctor-1.png" alt="">
+                              <img class="orts-doctor-image" src="images/doctors/doctor-2.png" alt="">
+                              <img class="orts-doctor-image-hover" src="images/doctors/doctor-3.png" alt="">
+                              <img class="orts-doctor-frame" src="images/doctors/frame-1.png" alt="">
+                              <img class="orts-doctor-frame-hover" src="images/doctors/frame-2.png" alt="">
+                              <div class="orts-doctor-icons">
+                                <div class="orts-doctor-exp-icon">
+                                  <span class="orts-doctor-exp-text"><span style="font-size:smaller">стаж</span><br> 8&nbsp;лет</span>
+                                  <img src="images/doctors/circle.png" alt="">
+                                </div>
+                                <div class="orts-doctor-edu-icon">
+                                  <img src="images/doctors/icon-hat.png" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="orts-doctor-info">
+                              <p class="orts-doctor-name">Борцова Олеся Михайловна</p>
+                              <div class="orts-doctor-position">Терапевт</div>
+                              <a class="orts-doctor-detail" href="#">Познакомится ближе</a>
+                              <button class="orts-doctor-signup btn">Записаться</button>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="orts-doctors-doctor orts-doctor">
+                          <div class="orts-doctor--inner">
+                            <div class="orts-doctor-images-block">
+                              <img class="orts-doctor-image" src="images/doctors/doctor-1.png" alt="">
+                              <img class="orts-doctor-image" src="images/doctors/doctor-2.png" alt="">
+                              <img class="orts-doctor-image-hover" src="images/doctors/doctor-3.png" alt="">
+                              <img class="orts-doctor-frame" src="images/doctors/frame-1.png" alt="">
+                              <img class="orts-doctor-frame-hover" src="images/doctors/frame-2.png" alt="">
+                              <div class="orts-doctor-icons">
+                                <div class="orts-doctor-exp-icon">
+                                  <span class="orts-doctor-exp-text"><span style="font-size:smaller">стаж</span><br> 8&nbsp;лет</span>
+                                  <img src="images/doctors/circle.png" alt="">
+                                </div>
+                                <div class="orts-doctor-edu-icon">
+                                  <img src="images/doctors/icon-hat.png" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="orts-doctor-info">
+                              <p class="orts-doctor-name">Борцова Олеся Михайловна</p>
+                              <div class="orts-doctor-position">Терапевт</div>
+                              <a class="orts-doctor-detail" href="#">Познакомится ближе</a>
+                              <button class="orts-doctor-signup btn">Записаться</button>
+                            </div>
+                          </div>
+                        </div>
+    
+                      </div>
+
+
+                      <!-- FAQ Block -->
+
+                      <section class="faq">
+                        <h2 class="faq-header section-header">Частые вопросы</h2>
+
+                        <div class="faq-block">
+                            <div class="faq-item">
+                                <div class="faq-title">
+                                    <p class="faq-title-text">Что такое кариес?</p>
+                                    <div class="faq-title-arrow">
+                                        <svg width="13px" height="8px">
+                                            <use xlink:href="images/sprite.svg#spoiler-arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="faq-text">
+                                    Кариес — это поражение зуба, связанное с разрушением его эмали (верхнего слоя), а затем и дентина (внутреннего слоя).
+                                </p>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-title">
+                                    <p class="faq-title-text">Как проводится лечение?</p>
+                                    <div class="faq-title-arrow">
+                                        <svg width="13px" height="8px">
+                                            <use xlink:href="images/sprite.svg#spoiler-arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="faq-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, odio molestiae! Praesentium facere quae aut, cupiditate dicta excepturi, unde eius, cum distinctio iure voluptatum laboriosam tempore tenetur fugit voluptatem accusamus!
+                                </p>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-title">
+                                    <p class="faq-title-text">Работаете ли вы по ДМС?</p>
+                                    <div class="faq-title-arrow">
+                                        <svg width="13px" height="8px">
+                                            <use xlink:href="images/sprite.svg#spoiler-arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="faq-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, odio molestiae! Praesentium facere quae aut, cupiditate dicta excepturi, unde eius, cum distinctio iure voluptatum laboriosam tempore tenetur fugit voluptatem accusamus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, odio molestiae! Praesentium facere quae aut, cupiditate dicta excepturi, unde eius, cum distinctio iure voluptatum laboriosam tempore tenetur fugit voluptatem accusamus!
+                                </p>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-title">
+                                    <p class="faq-title-text">Есть ли возможность рассррочки?</p>
+                                    <div class="faq-title-arrow">
+                                        <svg width="13px" height="8px">
+                                            <use xlink:href="images/sprite.svg#spoiler-arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="faq-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, odio molestiae! Praesentium facere quae aut, cupiditate dicta excepturi, unde eius, cum distinctio iure voluptatum laboriosam tempore tenetur fugit voluptatem accusamus!
+                                </p>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-title">
+                                    <p class="faq-title-text">Есть ли у вас скидки?</p>
+                                    <div class="faq-title-arrow">
+                                        <svg width="13px" height="8px">
+                                            <use xlink:href="images/sprite.svg#spoiler-arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="faq-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, odio molestiae! Praesentium facere quae aut, cupiditate dicta excepturi, unde eius, cum distinctio iure voluptatum laboriosam tempore tenetur fugit voluptatem accusamus!
+                                </p>
+                            </div>
+                        </div>
+                      </section>
 
 
 
                 </div>
-                <div class="services-main-form"></div>
+
+
+                <!-- Floating form -->
+                <div class="services-main-form-block floating-form" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1000">
+                    <form class="services-main-form">
+                        <h3 class="services-main-form-title">Поможем рассчитать <br> стоимость лечения</h3>
+                        <input class="services-main-form-input" type="text" id="name" name="name" placeholder="Как вас зовут?" onfocus="if (this.placeholder == 'Как вас зовут?') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Как вас зовут?';}">
+                        
+                        <input class="services-main-form-input" type="tel" id="tel" name="tel" placeholder="Номер телефона" onfocus="if (this.placeholder == 'Номер телефона') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Номер телефона';}"><br><br>
+                        
+                        <input type="submit" class="services-main-form-button btn" value="Хочу узнать стоимость">
+                      </form>
+
+                </div>
 
 
 
@@ -194,8 +362,104 @@
 
             </section>
 
+                <!-- Mini Banner Block -->
+            <section class="orts-mini-banner container" data-aos="fade-right">
+                <div class="orts-mini-banner-img">
+                <img src="images/mini-banner/1.jpg" alt="Фон">
+                </div>
+                <div class="orts-mini-banner--offer">
+                <svg width="48" height="40" class="orts-mini-banner-icon">
+                    <use xlink:href="images/sprite.svg#percent"></use>
+                </svg>
+                <div class="orts-mini-banner-text">У нас можно оплатить в рассрочку</div>
+                </div>
+                <button class="orts-mini-banner-button btn shine">Подробнее</button>
+            </section>
 
 
+            <!-- Clients reviews block -->
+        
+        <div class="orts-reviews-clients swiper" data-aos="fade-in" data-aos-delay="300">
+            <div class="swiper-wrapper-desktop">
+  
+              <div class="orts-reviews-client swiper-slide">
+                <div class="orts-reviews-client--inner">
+                  <div class="orts-reviews-client-top-info">
+                    <div class="orts-reviews-client-info">
+                      <div class="orts-reviews-client-img--wrap">
+                        <img class="orts-reviews-client-img" src="images/reviews/clients/client-1.png" alt="">
+                      </div>
+                      <div class="orts-reviews-client-meta">
+                        <span class="orts-reviews-client-name">Александр Михайлович</span>
+                        <span class="orts-reviews-client-date">10 января 2023г</span>
+                      </div>
+                    </div>
+                    <div class="orts-reviews-client-rating">
+                      <img class="orts-reviews-client-stars" src="images/reviews/stars.png" alt="">
+                      <img class="orts-reviews-client-site-icon" src="images/reviews/clients/site-1.png" alt="">
+                    </div>
+                  </div>
+                  <p class="orts-reviews-client-review">
+                    Замечательная стоматология, шикарный, чуткий персонал, врач Бреднева Ю.Е. сверх всяких похвал, к ребенку сразу
+                    находит подход, во время лечения с любовью общается с ребенком. только самых добрых пожеланий этой
+                    замечательной стоматологии
+                  </p>
+                </div>
+              </div>
+          
+              <div class="orts-reviews-client swiper-slide">
+                <div class="orts-reviews-client--inner">
+                  <div class="orts-reviews-client-top-info">
+                    <div class="orts-reviews-client-info">
+                      <div class="orts-reviews-client-img--wrap">
+                      </div>
+                      <div class="orts-reviews-client-meta">
+                        <span class="orts-reviews-client-name">Александр Михайлович</span>
+                        <span class="orts-reviews-client-date">10 января 2023г</span>
+                      </div>
+                    </div>
+                    <div class="orts-reviews-client-rating">
+                      <img class="orts-reviews-client-stars" src="images/reviews/stars.png" alt="">
+                      <div class="orts-reviews-client-site-icon--wrap">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="orts-reviews-client-review">
+                    <img src="images/reviews/handwrite.png" alt="">
+                  </div>
+                </div>
+              </div>
+          
+              <div class="orts-reviews-client swiper-slide">
+                <div class="orts-reviews-client--inner">
+                  <div class="orts-reviews-client-top-info">
+                    <div class="orts-reviews-client-info">
+                      <div class="orts-reviews-client-img--wrap">
+                        <img class="orts-reviews-client-img" src="images/reviews/clients/client-1.png" alt="">
+                      </div>
+                      <div class="orts-reviews-client-meta">
+                        <span class="orts-reviews-client-name">Александр Михайлович</span>
+                        <span class="orts-reviews-client-date">10 января 2023г</span>
+                      </div>
+                    </div>
+                    <div class="orts-reviews-client-rating">
+                      <img class="orts-reviews-client-stars" src="images/reviews/stars.png" alt="">
+                      <img class="orts-reviews-client-site-icon" src="images/reviews/clients/site-1.png" alt="">
+                    </div>
+                  </div>
+                  <p class="orts-reviews-client-review">
+                    Замечательная стоматология, шикарный, чуткий персонал, врач Бреднева Ю.Е. сверх всяких похвал, к ребенку сразу
+                    находит подход, во время лечения с любовью общается с ребенком. только самых добрых пожеланий этой
+                    замечательной стоматологии
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="reviews-spoiler hidden">Показать всё</div>
+            <div class="reviews-pagination swiper-pagination"></div>
+          
+          </div>
 
 
 
@@ -208,6 +472,8 @@
         </main>
 
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="libs/swiper-bundle.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 

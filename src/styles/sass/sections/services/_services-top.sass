@@ -2,6 +2,11 @@
     padding-top: 80px
     display: flex
     justify-content: space-between
+    padding-bottom: 50px
+
+    +mw(650)
+        flex-direction: column
+
 
 .services-top-nav
     a
@@ -16,14 +21,18 @@
     color: var(--c-font-light)
 
 .services-top-header
+    padding-right: 20px
 
 .section-header
 
 .services-top-img--wrap
-    width: 700px
+    max-width: 650px
     height: 210px
     overflow: hidden
     border-radius: 23px
+
+    +mw(650)
+        max-width: 100%
 
     img
         width: 100%

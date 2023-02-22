@@ -1,8 +1,4 @@
-// $('.orts-slider').flickity({
-//     // options
-//     cellAlign: 'left',
-//     contain: true
-//   });
+AOS.init();
 
 var mainSlider = new Swiper(".orts-slider", {
     spaceBetween: 30,
@@ -93,4 +89,23 @@ spoiler.addEventListener("click", (event) => {
   }
 });
 
+
+const allFaqPanels = $('.faq .faq-item > .faq-text').hide();
+
+$('.faq .faq-title').click(function() {
+
+    if($(this).hasClass('opened')) {
+        $(this).next().slideUp();
+        $(this).removeClass('opened');
+    }
+    else {
+        $(this).addClass('opened');
+        $(this).next().slideDown();
+    }
+    
+
+    
+
+    return false;
+  });
 

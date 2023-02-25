@@ -1,0 +1,87 @@
+.orts-tour--wrap
+    background: #EAE1CB
+    +mw(1050)
+        margin-top: 300px
+
+
+.orts-tour
+    display: flex
+    justify-content: space-between
+    padding: 50px 0
+    position: relative
+
+    +mw(1050)
+        justify-content: center
+
+    &-img
+        position: relative
+        bottom: -52px
+        left: 15%
+
+        +mw(1050)
+            position: absolute
+            top: -50%
+            right: 0
+            left: auto
+            z-index: -1
+
+        +mw(570)
+            right: -130px
+
+
+    &-text
+        padding-right: 25px
+
+        +mw(1050)
+            position: absolute
+            top: -50%
+            left: 20px
+            padding-right: 100px
+            max-width: 70%
+
+        +mw(570)
+            max-width: 80%
+            padding-right: 50px
+    &-title
+        font-family: 'Prosto One'
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 33px
+        max-width: 380px
+        padding-bottom: 30px
+        padding-top: 20px
+
+        +mw(570)
+            font-size: 20px
+            line-height: 25px
+
+    &-doc
+        display: flex
+        align-items: center
+
+        +mw(570)
+            font-size: smaller
+
+        svg
+            flex-shrink: 0
+            display: block
+            margin-right: 10px  
+            min-width: 47px
+
+            +mw(1050)
+                transform: scale(.7)
+            +mw(550)
+                display: none
+
+    &-video
+        flex-shrink: 0
+        width: 280px
+        height: 400px
+        border-radius: 25px
+        margin-right: 20px
+        overflow: hidden
+        position: relative
+        video 
+            position: absolute
+            bottom: 0

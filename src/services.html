@@ -56,7 +56,7 @@
                         </svg>
                     </div>
                     <a href="/" class="orts-typography-3 orts-header--logo">
-                        <svg width="93px" height="38px">
+                        <svg width="227px" height="130px">
                             <use xlink:href="images/sprite.svg#logo"></use>
                         </svg>
                     </a>
@@ -108,7 +108,7 @@
 
                     <h1 class="services-top-header section-header">Лечение зубов</h1>
                 </div>
-                <div class="services-top-img--wrap">
+                <div class="services-top-img--wrap modal-trigger">
                     <img src="images/services/header-img.png" alt="">
                 </div>
             </section>
@@ -359,7 +359,7 @@
                         <input class="services-main-form-input" type="tel" id="tel" name="tel" placeholder="Номер телефона" onfocus="if (this.placeholder == 'Номер телефона') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Номер телефона';}">
                         
                         <input type="submit" class="services-main-form-button btn" value="Хочу узнать стоимость">
-                      </form>
+                    </form>
 
                 </div>
 
@@ -559,8 +559,34 @@
             </div>
           </div>
 
-          <div class="modal">
 
+          <!-- Modal Window Block -->
+          <div class="modal" id="modal" tabindex="-1" role="dialog">
+            <div class="modal--wrap">
+                <div class="modal-consultant">
+                    <img src="images/modal/1.png" alt="">
+                </div>
+                <div class="modal-close"></div>
+
+                <div class="modal-form--wrap">
+                    <form class="modal-form" method="post">
+                        <h3 class="modal-form-title--top">Есть вопросы?</h3>
+                        <h3 class="modal-form-title--bottom">Оставьте свой номер и <br> мы вам перезвоним</h3>
+                        <input class="modal-form-input" type="tel" id="tel" name="tel" placeholder="Номер телефона" onfocus="if (this.placeholder == 'Номер телефона') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Номер телефона';}">
+                        
+                        
+                        <input type="submit" class="modal-form-button btn" value="Перезвоните мне">
+
+                        <div class="modal-form-consultant">
+                            <svg width="47px" height="36px">
+                                <use xlink:href="images/sprite.svg#decor-gold"></use>
+                            </svg>
+                            <p class="modal-form-consultant-name"><span class="bolder">Валерия Сотникова </span><br>
+                                ваш координатор лечения</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
           </div>
         </main>
 

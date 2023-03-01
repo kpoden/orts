@@ -1,0 +1,210 @@
+.unvis
+    display: none
+
+.services-content p 
+    padding-bottom: 15px
+
+.dyn-header
+    font-family: 'Prosto One'
+    font-weight: 400
+    padding-bottom: 30px
+    padding-top: 15px
+    line-height: 32px
+
+.dyn-text
+    font-family: 'Inter'
+    font-weight: 400
+    font-size: 18px
+    line-height: 28px
+
+.dyn-p
+    padding-bottom: 15px
+    font-family: 'Inter'
+    font-weight: 400
+    font-size: 18px
+    line-height: 28px
+
+.dyn-a
+    display: block
+    text-decoration: underline
+
+.text-center
+    text-align: center
+
+.text-left
+    text-align: left
+
+.text-just
+    text-align: justify
+
+.dyn-big
+    font-size: 2rem
+    margin: 30px 0
+
+.dyn-img-wrap
+    border-radius: 23px
+    overflow: hidden
+    margin-bottom: 20px
+    img
+        max-width: 100%
+
+.columns-revert
+    flex-direction: row-reverse
+
+.dyn-img-text
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 30px
+
+    .dyn-p
+        width: 40%
+
+        +mw(450)
+            width: 100%
+
+    .dyn-img-wrap
+        width: 50%
+
+        +mw(450)
+            width: 100%
+
+    +mw(450)
+        flex-direction: column
+
+
+.half-width
+    width: 60%
+    margin: 0 auto 20px
+
+
+        
+.dyn-quote
+    display: flex
+    margin-bottom: 20px
+    max-width: 500px
+    padding: 25px 25px 15px
+    background: var(--c-btn-sec-hover)
+    border-radius: 12px
+
+    .dyn-img-wrap
+        margin-right: 20px
+        margin-bottom: 0
+        flex-shrink: 0
+        width: 50px
+        height: 50px
+        border-radius: 25px
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: center center
+
+    a
+        color: var(--c-gold-primary)
+    
+
+
+.dyn-prices
+    max-width: none !important
+    justify-content: flex-start !important
+
+    +mw(640)
+        margin-right: -20px
+
+    .orts-prices-item
+        max-width: none !important
+        min-width: 180px !important
+        margin-right: 20px
+
+
+    .orts-prices-item-new-price
+        font-size: 0.8em !important
+    .orts-prices-item-old-price-num
+        font-size: 0.8em !important
+
+
+    .dyn-prices-item-4
+        width: calc((100% / 4) - 20px)
+    .dyn-prices-item-3
+        width: calc((100% / 3) - 20px)
+
+
+.dyn-gallery
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+
+    .dyn-gallery-item
+        max-width: calc((100% / 3) - 20px)
+        margin-right: 20px
+        cursor: pointer
+        max-height: 200px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: center center
+            border-radius: 23px
+
+        +mw(650)
+            max-width: calc((100% / 2) - 20px)
+
+        +mw(450)
+            max-width: 100%
+
+
+.dyn-vid
+    max-width: 400px
+    margin: 20px auto
+    border-radius: 23px
+    overflow: hidden
+ 
+
+.divider
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 20px
+    
+    +mw(700)
+        flex-wrap: wrap
+
+.part-2 > *
+    width: calc((100% / 2) - 20px)
+    margin-right: 20px
+
+    +mw(500)
+        width: 100%
+
+.part-3 > *
+    width: calc((100% / 3) - 20px)
+    margin-right: 20px
+
+    +mw(600)
+        width: calc((100% / 2) - 20px)
+    +mw(500)
+        width: 100%
+
+    
+.part-4 > *
+    width: calc((100% / 4) - 20px)
+    margin-right: 20px
+
+    +mw(700)
+        width: calc((100% / 3) - 20px)
+
+    +mw(600)
+        width: calc((100% / 2) - 20px)
+
+    +mw(500)
+        width: 100%
+
+
+.bg-align
+    background-size: cover
+    background-position: center center
+    padding: 15px 25px
+    border-radius: 23px
+    margin-bottom: 20px
